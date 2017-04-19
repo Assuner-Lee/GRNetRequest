@@ -13,16 +13,27 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* GRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* GRAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* GRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* GRViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		771B6802ED8DCC3C4FE4FDDC /* Pods_GRNetRequest_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68A99F2F9D66F1A826749C6 /* Pods_GRNetRequest_Tests.framework */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9C03EBDA1EA7286500017C9B /* GRShopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03EBD01EA7286500017C9B /* GRShopListViewController.m */; };
+		9C03EBDB1EA7286500017C9B /* GRShopList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03EBD31EA7286500017C9B /* GRShopList.m */; };
+		9C03EBDC1EA7286500017C9B /* GRShopListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03EBD51EA7286500017C9B /* GRShopListRequest.m */; };
+		9C03EBDD1EA7286500017C9B /* GRShopListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03EBD81EA7286500017C9B /* GRShopListCell.m */; };
+		9C03EBDE1EA7286500017C9B /* GRShopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C03EBD91EA7286500017C9B /* GRShopListCell.xib */; };
+		9C03EBE11EA728CC00017C9B /* GRAppStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03EBDF1EA728CC00017C9B /* GRAppStyle.m */; };
+		9C03EBE41EA7290D00017C9B /* GRListTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03EBE21EA7290D00017C9B /* GRListTypeModel.m */; };
+		9C03EBE81EA729A200017C9B /* UIView+GRShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03EBE61EA729A200017C9B /* UIView+GRShortcut.m */; };
+		9C03EBEC1EA72B0800017C9B /* GRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03EBEA1EA72B0800017C9B /* GRViewController.m */; };
+		9C03EBEF1EA72B6800017C9B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03EBED1EA72B6800017C9B /* MBProgressHUD.m */; };
+		9C03EBF41EA72BD600017C9B /* UIImage+GROperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03EBF01EA72BD600017C9B /* UIImage+GROperation.m */; };
+		9C03EBF51EA72BD600017C9B /* NSString+GRCommen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03EBF21EA72BD600017C9B /* NSString+GRCommen.m */; };
+		9C03EBF81EA72C2F00017C9B /* MBProgressHUD+GRShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03EBF61EA72C2F00017C9B /* MBProgressHUD+GRShow.m */; };
+		9C03EBFD1EA72F5000017C9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C03EBFB1EA72F5000017C9B /* LaunchScreen.storyboard */; };
 		F0E9D332238460EA00E95E07 /* Pods_GRNetRequest_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F690E9A21CFA0FD68D87398 /* Pods_GRNetRequest_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +60,6 @@
 		6003F59B195388D20070C39A /* GRNetRequest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GRNetRequest-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* GRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* GRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* GRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* GRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* GRNetRequest_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRNetRequest_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,9 +68,34 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6D7DBB4833A1344286A710C7 /* Pods-GRNetRequest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRNetRequest_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GRNetRequest_Tests/Pods-GRNetRequest_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F690E9A21CFA0FD68D87398 /* Pods_GRNetRequest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GRNetRequest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C03EBCF1EA7286500017C9B /* GRShopListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRShopListViewController.h; sourceTree = "<group>"; };
+		9C03EBD01EA7286500017C9B /* GRShopListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRShopListViewController.m; sourceTree = "<group>"; };
+		9C03EBD21EA7286500017C9B /* GRShopList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRShopList.h; sourceTree = "<group>"; };
+		9C03EBD31EA7286500017C9B /* GRShopList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRShopList.m; sourceTree = "<group>"; };
+		9C03EBD41EA7286500017C9B /* GRShopListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRShopListRequest.h; sourceTree = "<group>"; };
+		9C03EBD51EA7286500017C9B /* GRShopListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRShopListRequest.m; sourceTree = "<group>"; };
+		9C03EBD71EA7286500017C9B /* GRShopListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRShopListCell.h; sourceTree = "<group>"; };
+		9C03EBD81EA7286500017C9B /* GRShopListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRShopListCell.m; sourceTree = "<group>"; };
+		9C03EBD91EA7286500017C9B /* GRShopListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GRShopListCell.xib; sourceTree = "<group>"; };
+		9C03EBDF1EA728CC00017C9B /* GRAppStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRAppStyle.m; sourceTree = "<group>"; };
+		9C03EBE01EA728CC00017C9B /* GRAppStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRAppStyle.h; sourceTree = "<group>"; };
+		9C03EBE21EA7290D00017C9B /* GRListTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRListTypeModel.m; sourceTree = "<group>"; };
+		9C03EBE31EA7290D00017C9B /* GRListTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRListTypeModel.h; sourceTree = "<group>"; };
+		9C03EBE51EA7297000017C9B /* GRMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMacro.h; sourceTree = "<group>"; };
+		9C03EBE61EA729A200017C9B /* UIView+GRShortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GRShortcut.m"; sourceTree = "<group>"; };
+		9C03EBE71EA729A200017C9B /* UIView+GRShortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GRShortcut.h"; sourceTree = "<group>"; };
+		9C03EBEA1EA72B0800017C9B /* GRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRViewController.m; sourceTree = "<group>"; };
+		9C03EBEB1EA72B0800017C9B /* GRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRViewController.h; sourceTree = "<group>"; };
+		9C03EBED1EA72B6800017C9B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9C03EBEE1EA72B6800017C9B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9C03EBF01EA72BD600017C9B /* UIImage+GROperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GROperation.m"; sourceTree = "<group>"; };
+		9C03EBF11EA72BD600017C9B /* UIImage+GROperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GROperation.h"; sourceTree = "<group>"; };
+		9C03EBF21EA72BD600017C9B /* NSString+GRCommen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GRCommen.m"; sourceTree = "<group>"; };
+		9C03EBF31EA72BD600017C9B /* NSString+GRCommen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GRCommen.h"; sourceTree = "<group>"; };
+		9C03EBF61EA72C2F00017C9B /* MBProgressHUD+GRShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+GRShow.m"; sourceTree = "<group>"; };
+		9C03EBF71EA72C2F00017C9B /* MBProgressHUD+GRShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+GRShow.h"; sourceTree = "<group>"; };
+		9C03EBFC1EA72F5000017C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0B08F6752D4DB79167CD3E9 /* GRNetRequest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GRNetRequest.podspec; path = ../GRNetRequest.podspec; sourceTree = "<group>"; };
 		C0FD186D2D18099AF9A27EA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D68A99F2F9D66F1A826749C6 /* Pods_GRNetRequest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GRNetRequest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,10 +168,8 @@
 			children = (
 				6003F59C195388D20070C39A /* GRAppDelegate.h */,
 				6003F59D195388D20070C39A /* GRAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* GRViewController.h */,
-				6003F5A6195388D20070C39A /* GRViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				9C03EBFB1EA72F5000017C9B /* LaunchScreen.storyboard */,
+				9C03EBCD1EA7286500017C9B /* Shop */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -183,6 +215,71 @@
 				C0FD186D2D18099AF9A27EA9 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		9C03EBCD1EA7286500017C9B /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				9C03EBE91EA72A6D00017C9B /* Support */,
+				9C03EBCE1EA7286500017C9B /* Controller */,
+				9C03EBD11EA7286500017C9B /* Model */,
+				9C03EBD61EA7286500017C9B /* View */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		9C03EBCE1EA7286500017C9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C03EBCF1EA7286500017C9B /* GRShopListViewController.h */,
+				9C03EBD01EA7286500017C9B /* GRShopListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C03EBD11EA7286500017C9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C03EBD21EA7286500017C9B /* GRShopList.h */,
+				9C03EBD31EA7286500017C9B /* GRShopList.m */,
+				9C03EBD41EA7286500017C9B /* GRShopListRequest.h */,
+				9C03EBD51EA7286500017C9B /* GRShopListRequest.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C03EBD61EA7286500017C9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C03EBD71EA7286500017C9B /* GRShopListCell.h */,
+				9C03EBD81EA7286500017C9B /* GRShopListCell.m */,
+				9C03EBD91EA7286500017C9B /* GRShopListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C03EBE91EA72A6D00017C9B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9C03EBE51EA7297000017C9B /* GRMacro.h */,
+				9C03EBE61EA729A200017C9B /* UIView+GRShortcut.m */,
+				9C03EBE71EA729A200017C9B /* UIView+GRShortcut.h */,
+				9C03EBDF1EA728CC00017C9B /* GRAppStyle.m */,
+				9C03EBE01EA728CC00017C9B /* GRAppStyle.h */,
+				9C03EBE21EA7290D00017C9B /* GRListTypeModel.m */,
+				9C03EBE31EA7290D00017C9B /* GRListTypeModel.h */,
+				9C03EBEA1EA72B0800017C9B /* GRViewController.m */,
+				9C03EBF61EA72C2F00017C9B /* MBProgressHUD+GRShow.m */,
+				9C03EBF71EA72C2F00017C9B /* MBProgressHUD+GRShow.h */,
+				9C03EBF01EA72BD600017C9B /* UIImage+GROperation.m */,
+				9C03EBF11EA72BD600017C9B /* UIImage+GROperation.h */,
+				9C03EBF21EA72BD600017C9B /* NSString+GRCommen.m */,
+				9C03EBF31EA72BD600017C9B /* NSString+GRCommen.h */,
+				9C03EBEB1EA72B0800017C9B /* GRViewController.h */,
+				9C03EBED1EA72B6800017C9B /* MBProgressHUD.m */,
+				9C03EBEE1EA72B6800017C9B /* MBProgressHUD.h */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 		C1080285617B929A671C5AD8 /* Pods */ = {
@@ -279,8 +376,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				9C03EBDE1EA7286500017C9B /* GRShopListCell.xib in Resources */,
+				9C03EBFD1EA72F5000017C9B /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -394,9 +491,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C03EBE11EA728CC00017C9B /* GRAppStyle.m in Sources */,
+				9C03EBDA1EA7286500017C9B /* GRShopListViewController.m in Sources */,
+				9C03EBE81EA729A200017C9B /* UIView+GRShortcut.m in Sources */,
 				6003F59E195388D20070C39A /* GRAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* GRViewController.m in Sources */,
+				9C03EBEF1EA72B6800017C9B /* MBProgressHUD.m in Sources */,
+				9C03EBDB1EA7286500017C9B /* GRShopList.m in Sources */,
+				9C03EBE41EA7290D00017C9B /* GRListTypeModel.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				9C03EBEC1EA72B0800017C9B /* GRViewController.m in Sources */,
+				9C03EBF81EA72C2F00017C9B /* MBProgressHUD+GRShow.m in Sources */,
+				9C03EBDD1EA7286500017C9B /* GRShopListCell.m in Sources */,
+				9C03EBF51EA72BD600017C9B /* NSString+GRCommen.m in Sources */,
+				9C03EBF41EA72BD600017C9B /* UIImage+GROperation.m in Sources */,
+				9C03EBDC1EA7286500017C9B /* GRShopListRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,10 +543,10 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+		9C03EBFB1EA72F5000017C9B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				71719F9E1E33DC2100824A3D /* Base */,
+				9C03EBFC1EA72F5000017C9B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

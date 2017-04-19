@@ -15,6 +15,11 @@ typedef NS_ENUM(NSUInteger, GRHTTPMethod) {
     GRHTTPMethodPut,
 };
 
+#define GRWEAK(aObject) \
+__weak typeof(aObject) weak##aObject = aObject
+
+#define GRSTRONG(aObject) \
+__strong typeof(weak##aObject) aObject = weak##aObject
 
 @interface GRNetRequestObject : NSObject
 

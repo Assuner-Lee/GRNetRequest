@@ -7,13 +7,17 @@
 //
 
 #import "GRAppDelegate.h"
+#import "GRShopListViewController.h"
 
 @implementation GRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[GRShopListViewController alloc] init]];
+    [self.window makeKeyAndVisible];
     return YES;
+    //demo：首次进入app，直接请求网络，若再次请求，先加载RAM缓存，再请求；退出后再次进入app，先加载ROM缓存，再请求。
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -36,7 +36,7 @@
     self.complete = complete;
     switch (self.httpMethod) {
         case GRHTTPMethodGet: {
-            [GRHTTPManager GET:self.requestPath completionHandler:^(id  _Nullable responseObject, NSError * _Nullable error) {
+            [GRHTTPManager GET:self.requestPath paramsDic:[self paramsDic] completionHandler:^(id  _Nullable responseObject, NSError * _Nullable error) {
                 [self handleResponseObject:responseObject error:error];
             }];
         } break;

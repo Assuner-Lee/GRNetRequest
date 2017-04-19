@@ -29,8 +29,8 @@
 
 #pragma mark HTTPMethod
 
-+ (void)GET:(NSString *_Nonnull)path completionHandler:(nullable GRRequestComplete)complete {
-    [[self sharedManager] GET:path parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
++ (void)GET:(NSString *_Nonnull)path paramsDic:(NSDictionary *_Nullable)paramsDic completionHandler:(nullable GRRequestComplete)complete {
+    [[self sharedManager] GET:path parameters:paramsDic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (complete) {
             complete(responseObject, nil);
         }

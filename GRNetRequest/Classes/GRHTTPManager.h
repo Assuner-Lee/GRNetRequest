@@ -15,7 +15,7 @@ typedef void (^GRRequestComplete)(id _Nullable responseObject, NSError * _Nullab
 
 + (AFHTTPSessionManager *_Nonnull)sharedManager;
 
-+ (void)GET:(NSString *_Nonnull)path completionHandler:(nullable GRRequestComplete)complete;
++ (void)GET:(NSString *_Nonnull)path paramsDic:(NSDictionary *_Nullable)paramsDic completionHandler:(nullable GRRequestComplete)complete;
 
 + (void)POST:(NSString *_Nonnull)path paramsDic:(NSDictionary *_Nullable)paramsDic completionHandler:(nullable GRRequestComplete)complete;
 

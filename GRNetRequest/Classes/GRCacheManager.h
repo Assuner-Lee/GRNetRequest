@@ -15,6 +15,8 @@
 
 + (id)modelCacheOfKey:(NSString *)path className:(NSString *)name;
 
++ (void)setCacheCountLimit:(NSUInteger)count;
+
 + (void)clearAllCache;
 
 @end

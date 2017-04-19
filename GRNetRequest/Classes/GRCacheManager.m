@@ -14,12 +14,13 @@
 @property (nonatomic, strong) NSCache *ramCache;
 @property (nonatomic, strong) NSMutableDictionary *romCache;
 @property (nonatomic, strong) NSArray *keysArray;
+@property (nonatomic, assign) NSUInteger cacheCountLimit;
 
 @end
 
 @implementation GRCacheManager
 
-+ (instancetype)sharedManager {
++ (GRCacheManager *)sharedManager {
     static GRCacheManager *maneger = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -31,7 +32,8 @@
 - (instancetype)init {
     if (self = [super init]) {
         self.ramCache = [[NSCache alloc] init];
-        self.ramCache.countLimit = 20;
+        self.cacheCountLimit = 20;
+        self.ramCache.countLimit = self.cacheCountLimit;
         NSMutableDictionary *romCacheDic = [NSMutableDictionary dictionaryWithContentsOfFile:[self filePath]];
         if (romCacheDic) {
             self.romCache = romCacheDic;
@@ -51,6 +53,13 @@
     return [[self sharedManager] modelCacheOfKey:path className:modelClassName];
 }
 
++ (void)setCacheCountLimit:(NSUInteger)count {
+    [self clearAllCache];
+    GRCacheManager *cacheManager = [self sharedManager];
+    cacheManager.cacheCountLimit = count;
+    cacheManager.ramCache.countLimit = cacheManager.cacheCountLimit;
+}
+
 + (void)clearAllCache {
     GRCacheManager *manager = [self sharedManager];
     [manager.ramCache removeAllObjects];
@@ -67,15 +76,17 @@
 
 - (void)saveCacheWithObject:(GRModel *)model json:(NSDictionary *)dic forKey:(NSString *)path {
  @synchronized(self) {
-    [self.ramCache setObject:model forKey:[path copy]];
-    if (self.keysArray.count <= 20) {
-        [self.romCache setObject:dic forKey:path];
-    } else {
-        [self.romCache removeObjectForKey:self.keysArray[1]];
-        [self.romCache setObject:dic forKey:path];
-    }
-    self.keysArray = self.romCache.allKeys;
-    [self.romCache writeToFile:[self filePath] atomically:YES];
+     if (self.cacheCountLimit) {
+         [self.ramCache setObject:model forKey:[path copy]];
+         if (self.keysArray.count <= self.cacheCountLimit) {
+             [self.romCache setObject:dic forKey:path];
+         } else {
+             [self.romCache removeObjectForKey:self.keysArray[0]];
+             [self.romCache setObject:dic forKey:path];
+         }
+         self.keysArray = self.romCache.allKeys;
+         [self.romCache writeToFile:[self filePath] atomically:YES];
+     }
  }
 }
 
@@ -88,7 +99,7 @@
     } else if ([self.keysArray containsObject:path]) {
         if (modelClassName) {
             Class modelClass = NSClassFromString(modelClassName);
-            if (modelClass) {
+            if (modelClass  && [modelClass isSubclassOfClass:[GRModel class]]) {
                 NSDictionary *modelDic = [self.romCache objectForKey:path];
                 object = [modelClass mj_objectWithKeyValues:modelDic];
                 return object;

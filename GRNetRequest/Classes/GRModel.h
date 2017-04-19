@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface GRModel : NSObject
-
++ (NSDictionary *)mj_replacedKeyFromPropertyName;
++ (NSDictionary *)mj_objectClassInArray;
 + (instancetype)jsonToModel:(NSDictionary *)json;
 
 @end
