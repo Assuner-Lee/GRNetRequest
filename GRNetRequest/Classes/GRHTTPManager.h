@@ -6,6 +6,7 @@
 //  Copyright © 2017年 Assuner. All rights reserved.
 //
 
+@import AFNetworking;
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFNetworking.h>
 
