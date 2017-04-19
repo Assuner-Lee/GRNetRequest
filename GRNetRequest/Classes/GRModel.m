@@ -7,7 +7,7 @@
 //
 
 #import "GRModel.h"
-#import "MJExtension.h"
+#import <MJExtension/MJExtension.h>
 
 @implementation GRModel
 
