@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Assuner. All rights reserved.
 //
 
-#import "GRNetRequestObject.h"
+#import <GRNetRequest/GRNetRequestObject.h>
 
 @interface GRShopListRequest : GRNetRequestObject
 

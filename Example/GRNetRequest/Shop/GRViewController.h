@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GRNetRequestObject.h"
+#import <GRNetRequest/GRNetRequestObject.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

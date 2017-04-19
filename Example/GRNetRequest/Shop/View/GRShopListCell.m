@@ -8,7 +8,7 @@
 
 #import "GRShopListCell.h"
 #import "GRAppStyle.h"
-#import "UIImageView+AFNetworking.h"
+#import <AFNetWorking/UIImageView+AFNetworking.h>
 #import "UIView+GRShortcut.h"
 #import "GRMacro.h"
 

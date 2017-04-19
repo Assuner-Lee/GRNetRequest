@@ -7,7 +7,6 @@
 //
 
 @import UIKit;
-@import GRNetRequest;
 #import "GRAppDelegate.h"
 
 int main(int argc, char * argv[])

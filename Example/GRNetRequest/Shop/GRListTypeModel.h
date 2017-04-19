@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Assuner. All rights reserved.
 //
 
-#import "GRModel.h"
+#import <GRNetRequest/GRModel.h>
 
 @interface GRListTypeModel : GRModel
 
