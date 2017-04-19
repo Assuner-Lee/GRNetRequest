@@ -1,7 +1,7 @@
 {
   "name": "GRNetRequest",
   "version": "0.1.0",
-  "summary": "A short description of GRNetRequest.",
+  "summary": "A request library with caches storage.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Assuner-Lee/GRNetRequest",
   "license": {
