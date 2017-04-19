@@ -1,0 +1,6 @@
+framework module GRNetRequest {
+  umbrella header "GRNetRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_GRNetRequest_Tests {
+  umbrella header "Pods-GRNetRequest_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
