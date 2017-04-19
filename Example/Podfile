@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GRNetRequest_Example' do
+  pod 'GRNetRequest', :path => '../'
+
+  target 'GRNetRequest_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
